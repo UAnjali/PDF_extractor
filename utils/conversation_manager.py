@@ -5,7 +5,7 @@ from pathlib import Path
 import logging
 from typing import List, Dict, Any
 # Import the summarizer
-from utils.conversation_summarizer import summarize_and_append_to_csv
+# from utils.conversation_summarizer import summarize_and_append_to_csv
 
 # Set up logging
 logging.basicConfig(
@@ -100,8 +100,8 @@ class ConversationManager:
                 
                 logging.info(f"Archived conversation session: {self.current_session_file}")
                 # Summarize and append to CSV
-                csv_path = Path("conversation_summaries.csv")
-                summarize_and_append_to_csv(str(self.current_session_file), str(csv_path))
+                # csv_path = Path("conversation_summaries.csv")
+                # summarize_and_append_to_csv(str(self.current_session_file), str(csv_path))
             except Exception as e:
                 logging.error(f"Error archiving conversation session: {str(e)}")
         
