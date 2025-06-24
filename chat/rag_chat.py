@@ -30,15 +30,8 @@ class PDFExtractor:
         self.is_first_message = True
         # Define keyword mappings for different topics with more variations
         self.keyword_mappings = {
-            "data analytics": ["data analysis", "analytics course", "data science", "business analytics", "data analyst", "analytics training"],
-            "curriculum": ["course topics", "modules", "class topics", "syllabus", "course content", "learning path", "what will i learn", "topics covered"],
-            "course topic": ["curriculum", "modules", "syllabus", "course content", "learning path", "what will i learn", "topics covered"],
-            "topics": ["curriculum", "course content", "modules", "syllabus", "learning path", "what will i learn"],
-            "projects": ["case studies", "hands on", "practice", "real world projects", "industry projects"],
-            "placement": ["jobs", "career", "salary", "companies", "recruitment", "hiring", "job opportunities", "placement support"],
-            "fee": ["payment", "pricing", "cost", "installment", "refund", "scholarship", "course fee", "payment options", "price", "costing"],
-            "duration": ["course length", "time period", "schedule", "batch timing", "class schedule", "how long", "course duration"],
-            "prerequisites": ["eligibility", "requirements", "background", "skills needed", "qualification", "who can join"]
+            "pdf": ["pdf", "file", "document", "knowledge base", "content"],
+            "tell": ["bata do", "explain", "detail", "answer", "smjha do"]
         }
         
         # Define query understanding prompt for PDF Extractor with Hinglish/English detection
