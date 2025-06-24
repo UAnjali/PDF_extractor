@@ -2,7 +2,7 @@ import streamlit as st
 import logging
 from pathlib import Path
 import shutil
-from chat.rag_chat import SalesCounsellorBot
+from chat.rag_chat import PDFExtractor
 from embeddings.embed_docs import process_uploaded_file, reembed_all_documents
 from utils.conversation_manager import ConversationManager
 
@@ -16,7 +16,7 @@ logging.basicConfig(
 # Add caching for the chatbot
 @st.cache_resource
 def get_chatbot():
-    return SalesCounsellorBot()
+    return PDFExtractor()
 
 def initialize_session_state():
     """Initialize session state variables."""
@@ -24,8 +24,7 @@ def initialize_session_state():
         st.session_state.messages = []
     if "chatbot" not in st.session_state:
         try:
-            # Only re-embed at the start of each session
-            reembed_all_documents()
+            # Do NOT re-embed all documents here!
             st.session_state.chatbot = get_chatbot()
         except Exception as e:
             st.error(f"Error initializing chatbot: {str(e)}")
@@ -186,4 +185,4 @@ def main():
                     st.session_state.conversation_manager.add_message("assistant", error_message)
 
 if __name__ == "__main__":
-    main() 
+    main()

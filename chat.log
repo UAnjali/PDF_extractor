@@ -1,0 +1,317 @@
+2025-06-24 13:54:16,670 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-06-24 13:54:16,825 - INFO - HTTP Request: DELETE https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-24 13:54:16,827 - INFO - Deleted existing collection to ensure consistency
+2025-06-24 13:54:17,025 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-24 13:54:17,025 - INFO - Created new collection 'sales_counsellor' with correct dimensions
+2025-06-24 13:54:17,026 - INFO - Loading PDF file: data/Sales_Manual_2013.pdf
+2025-06-24 13:54:25,862 - INFO - Loaded 294 documents from data/Sales_Manual_2013.pdf
+2025-06-24 13:54:25,863 - INFO - Loaded 294 documents from data/Sales_Manual_2013.pdf
+2025-06-24 13:54:25,863 - INFO - Loading PDF file: data/Compendium_upto_March_2022.pdf
+2025-06-24 13:54:30,441 - INFO - Loaded 738 documents from data/Compendium_upto_March_2022.pdf
+2025-06-24 13:54:30,441 - INFO - Loaded 738 documents from data/Compendium_upto_March_2022.pdf
+2025-06-24 13:54:30,479 - INFO - Split 1032 documents into 1809 chunks
+2025-06-24 13:54:30,505 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-24 13:54:31,767 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:32,637 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:32,903 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:33,661 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:33,985 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:34,372 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:34,616 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:35,721 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:36,097 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:36,787 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:37,035 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:37,689 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:37,938 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:38,610 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:38,939 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:39,644 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:39,939 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:40,933 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:41,282 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:41,936 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:42,212 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:43,846 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:44,379 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:44,993 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:45,268 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:45,641 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:45,885 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:48,575 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:48,834 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:49,152 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:49,459 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:49,799 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:50,036 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:50,513 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:50,754 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:50,935 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:51,187 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:51,458 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:51,761 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:52,275 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:52,568 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:53,073 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:53,317 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:53,810 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:54,072 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:54,730 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:55,008 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:55,337 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:55,576 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:55,902 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:56,141 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:56,557 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:56,800 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:57,288 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:57,588 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:57,972 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:58,210 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:58,653 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:58,726 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-24 13:54:58,727 - INFO - Successfully re-embedded all 1809 chunks
+2025-06-24 13:54:58,962 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-06-24 13:54:59,040 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-24 13:54:59,041 - INFO - Using existing collection 'sales_counsellor'
+2025-06-24 13:54:59,046 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-24 13:54:59,189 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:54:59,193 - INFO - Chat chain initialized successfully
+2025-06-24 13:54:59,195 - INFO - Started new conversation session: conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:55:11,855 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:55:13,430 - INFO - Structured query: The user is asking for information related to theft.
+2025-06-24 13:55:13,431 - INFO - Original query: The user is asking for information related to theft.
+2025-06-24 13:55:13,431 - INFO - Enhanced query: The user is asking for information related to theft. data analytics course
+2025-06-24 13:55:13,431 - INFO - Searching with enhanced structured query: The user is asking for information related to theft. data analytics course
+2025-06-24 13:55:13,661 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:55:13,694 - INFO - HTTP Request: POST https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points/query "HTTP/1.1 200 OK"
+2025-06-24 13:55:13,695 - INFO - Retrieved document 1:
+2025-06-24 13:55:13,695 - INFO - Content: 3. If theft is detected, a minimum amount of Rs. 500/ - per case shall be given 
+immediately to the informer on providing correct secret code word and 
+unique complaint number and exact details of the...
+2025-06-24 13:55:13,696 - INFO - Retrieved document 2:
+2025-06-24 13:55:13,696 - INFO - Content: 188  
+ 
+ 
+SECTION – VIII 
+ 
+THEFT AND UN-AUTHORISED USE OF ENERGY 
+ 
+INSTRUCTION NO. 8.1 
+ 
+A. Instructions for dealing the cases of theft of Electricity under Electricity 
+Act-2003, Electricity (Amen...
+2025-06-24 13:55:13,696 - INFO - Retrieved document 3:
+2025-06-24 13:55:13,696 - INFO - Content: h) The M&P wing shall analyses such tamper information data, load survey 
+data and consumption data. The analysis will be specific to identify 
+cases where revenue loss may have taken place as well as...
+2025-06-24 13:55:13,696 - INFO - Combined context length: 2444 characters
+2025-06-24 13:55:15,763 - INFO - Generated response: Theft of electricity occurs if a person dishonestly:
+*   Taps, makes, or causes to be made any connection with overhead, underground, or underwater lines or cables, or service wires, or service facili...
+2025-06-24 13:55:15,767 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:55:22,302 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:55:23,814 - INFO - Structured query: Theft ki calculations ke baare mein, informer ko milne wale incentive ki calculation di gayi hai:
+
+*   20% of the recovered assessed theft amount (excluding compounding charges) agar DHBVN amount recover kar pata hai.
+2025-06-24 13:55:23,814 - INFO - Original query: Theft ki calculations ke baare mein, informer ko milne wale incentive ki calculation di gayi hai:
+
+*   20% of the recovered assessed theft amount (excluding compounding charges) agar DHBVN amount recover kar pata hai.
+2025-06-24 13:55:23,814 - INFO - Enhanced query: Theft ki calculations ke baare mein, informer ko milne wale incentive ki calculation di gayi hai:
+
+*   20% of the recovered assessed theft amount (excluding compounding charges) agar DHBVN amount recover kar pata hai.
+2025-06-24 13:55:23,814 - INFO - Searching with enhanced structured query: Theft ki calculations ke baare mein, informer ko milne wale incentive ki calculation di gayi hai:
+
+*   20% of the recovered assessed theft amount (excluding compounding charges) agar DHBVN amount recover kar pata hai.
+2025-06-24 13:55:24,070 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:55:24,100 - INFO - HTTP Request: POST https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points/query "HTTP/1.1 200 OK"
+2025-06-24 13:55:24,101 - INFO - Retrieved document 1:
+2025-06-24 13:55:24,101 - INFO - Content: 3. If theft is detected, a minimum amount of Rs. 500/ - per case shall be given 
+immediately to the informer on providing correct secret code word and 
+unique complaint number and exact details of the...
+2025-06-24 13:55:24,101 - INFO - Retrieved document 2:
+2025-06-24 13:55:24,101 - INFO - Content: prevention incentive scheme has been launched. The salient features of the 
+scheme are as under:- 
+1. The informer under the scheme shall be required to inform at toll free 
+telephone number 180018010...
+2025-06-24 13:55:24,102 - INFO - Retrieved document 3:
+2025-06-24 13:55:24,102 - INFO - Content: 231  
+ 
+5. Applicability of Scheme:  The scheme shall be applicable for raids 
+conducted with connected load/sanctioned load more than 5 KW to all 
+categories of consumers/persons. 
+6. Complaint shall...
+2025-06-24 13:55:24,102 - INFO - Combined context length: 2402 characters
+2025-06-24 13:55:26,459 - INFO - Generated response: Incentive ki calculations do tareeke se hoti hain:
+
+1.  Agar chori pakdi jaati hai, toh informer ko turant Rs. 500/- milenge.
+2.  Agar DHBVN chori ki assess ki hui amount (compounding charges ko chhod...
+2025-06-24 13:55:26,464 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:55:45,225 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:55:51,102 - INFO - Structured query: Calculations do tareeke se hoti hain:
+
+1.  **Turant Rs. 500/-:** Agar chori pakdi jaati hai, toh informer ko turant Rs. 500/- mil jaate hain.
+2.  **20% of recovered amount:** Agar DHBVN chori ki assess ki hui amount (compounding charges ko chhodkar) recover kar leti hai, toh informer ko uss recover ki hui amount ka 20% milta hai. Compounding amount par koi incentive nahi diya jaayega.
+2025-06-24 13:55:51,102 - INFO - Original query: Calculations do tareeke se hoti hain:
+
+1.  **Turant Rs. 500/-:** Agar chori pakdi jaati hai, toh informer ko turant Rs. 500/- mil jaate hain.
+2.  **20% of recovered amount:** Agar DHBVN chori ki assess ki hui amount (compounding charges ko chhodkar) recover kar leti hai, toh informer ko uss recover ki hui amount ka 20% milta hai. Compounding amount par koi incentive nahi diya jaayega.
+2025-06-24 13:55:51,102 - INFO - Enhanced query: Calculations do tareeke se hoti hain:
+
+1.  **Turant Rs. 500/-:** Agar chori pakdi jaati hai, toh informer ko turant Rs. 500/- mil jaate hain.
+2.  **20% of recovered amount:** Agar DHBVN chori ki assess ki hui amount (compounding charges ko chhodkar) recover kar leti hai, toh informer ko uss recover ki hui amount ka 20% milta hai. Compounding amount par koi incentive nahi diya jaayega.
+2025-06-24 13:55:51,102 - INFO - Searching with enhanced structured query: Calculations do tareeke se hoti hain:
+
+1.  **Turant Rs. 500/-:** Agar chori pakdi jaati hai, toh informer ko turant Rs. 500/- mil jaate hain.
+2.  **20% of recovered amount:** Agar DHBVN chori ki assess ki hui amount (compounding charges ko chhodkar) recover kar leti hai, toh informer ko uss recover ki hui amount ka 20% milta hai. Compounding amount par koi incentive nahi diya jaayega.
+2025-06-24 13:55:51,292 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:55:51,395 - INFO - HTTP Request: POST https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points/query "HTTP/1.1 200 OK"
+2025-06-24 13:55:51,396 - INFO - Retrieved document 1:
+2025-06-24 13:55:51,397 - INFO - Content: 3. If theft is detected, a minimum amount of Rs. 500/ - per case shall be given 
+immediately to the informer on providing correct secret code word and 
+unique complaint number and exact details of the...
+2025-06-24 13:55:51,397 - INFO - Retrieved document 2:
+2025-06-24 13:55:51,397 - INFO - Content: prevention incentive scheme has been launched. The salient features of the 
+scheme are as under:- 
+1. The informer under the scheme shall be required to inform at toll free 
+telephone number 180018010...
+2025-06-24 13:55:51,397 - INFO - Retrieved document 3:
+2025-06-24 13:55:51,397 - INFO - Content: 231  
+ 
+5. Applicability of Scheme:  The scheme shall be applicable for raids 
+conducted with connected load/sanctioned load more than 5 KW to all 
+categories of consumers/persons. 
+6. Complaint shall...
+2025-06-24 13:55:51,397 - INFO - Combined context length: 2402 characters
+2025-06-24 13:55:53,834 - INFO - Generated response: Incentive ki calculations do tareeke se hoti hain:
+
+1.  Agar chori pakdi jaati hai, toh informer ko turant Rs. 500/- milenge.
+2.  Agar DHBVN chori ki assess ki hui amount (compounding charges ko chhod...
+2025-06-24 13:55:53,840 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:56:01,306 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:56:01,309 - INFO - Handling basic conversation query
+2025-06-24 13:56:03,695 - INFO - Generated response: Theft ki calculation kaise hoti hai, iski jaankari knowledge base mein nahi di gayi hai....
+2025-06-24 13:56:03,702 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:56:13,648 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:56:21,392 - INFO - Structured query: The user is asking for the method of calculating theft.
+2025-06-24 13:56:21,393 - INFO - Original query: The user is asking for the method of calculating theft.
+2025-06-24 13:56:21,393 - INFO - Enhanced query: The user is asking for the method of calculating theft. data analytics course
+2025-06-24 13:56:21,394 - INFO - Searching with enhanced structured query: The user is asking for the method of calculating theft. data analytics course
+2025-06-24 13:56:21,739 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:56:21,809 - INFO - HTTP Request: POST https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points/query "HTTP/1.1 200 OK"
+2025-06-24 13:56:21,810 - INFO - Retrieved document 1:
+2025-06-24 13:56:21,810 - INFO - Content: assessment in respect of each such act shall be separately made for every such 
+theft of electricity.  
+(d) Method for assessment of quantity in units for theft of electricity: - Quantity 
+of units co...
+2025-06-24 13:56:21,810 - INFO - Retrieved document 2:
+2025-06-24 13:56:21,811 - INFO - Content: (a) Period of Assessment: - The period of assessment shall be taken as a period of 
+12 months immediately preceding the date of inspection or from the date of 
+release of connection or date of last ch...
+2025-06-24 13:56:21,811 - INFO - Retrieved document 3:
+2025-06-24 13:56:21,811 - INFO - Content: 3. If theft is detected, a minimum amount of Rs. 500/ - per case shall be given 
+immediately to the informer on providing correct secret code word and 
+unique complaint number and exact details of the...
+2025-06-24 13:56:21,811 - INFO - Combined context length: 2428 characters
+2025-06-24 13:56:25,967 - INFO - Generated response: Theft of electricity is calculated in two main steps:
+
+1.  **Method for assessment of quantity in units:**
+    *   **For LT Supply:** KW x LF x H x D
+    *   **For HT Supply:** MD x LF x H x D
+
+    Wh...
+2025-06-24 13:56:25,975 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:57:21,201 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 13:57:35,648 - INFO - Structured query: Theft ki calculation ke alawa, bijli chori ke mamle mein 'compounding' ka option bhi hota hai.
+
+Compounding ka matlab hai ki aap ek nirdharit rashi (compounding charges) dekar mamle ko court ke bahar hi settle kar sakte hain. Isse aapko aage ki kanooni kaarwai se bachne mein madad milti hai.
+
+Compounding charges har category ke liye alag ho sakte hain aur yeh assessed amount ke upar hote hain. Agar aap compounding opt karte hain, toh aapko assessed amount ke saath compounding charges bhi dene honge.
+2025-06-24 13:57:35,650 - INFO - Original query: Theft ki calculation ke alawa, bijli chori ke mamle mein 'compounding' ka option bhi hota hai.
+
+Compounding ka matlab hai ki aap ek nirdharit rashi (compounding charges) dekar mamle ko court ke bahar hi settle kar sakte hain. Isse aapko aage ki kanooni kaarwai se bachne mein madad milti hai.
+
+Compounding charges har category ke liye alag ho sakte hain aur yeh assessed amount ke upar hote hain. Agar aap compounding opt karte hain, toh aapko assessed amount ke saath compounding charges bhi dene honge.
+2025-06-24 13:57:35,650 - INFO - Enhanced query: Theft ki calculation ke alawa, bijli chori ke mamle mein 'compounding' ka option bhi hota hai.
+
+Compounding ka matlab hai ki aap ek nirdharit rashi (compounding charges) dekar mamle ko court ke bahar hi settle kar sakte hain. Isse aapko aage ki kanooni kaarwai se bachne mein madad milti hai.
+
+Compounding charges har category ke liye alag ho sakte hain aur yeh assessed amount ke upar hote hain. Agar aap compounding opt karte hain, toh aapko assessed amount ke saath compounding charges bhi dene honge.
+2025-06-24 13:57:35,650 - INFO - Searching with enhanced structured query: Theft ki calculation ke alawa, bijli chori ke mamle mein 'compounding' ka option bhi hota hai.
+
+Compounding ka matlab hai ki aap ek nirdharit rashi (compounding charges) dekar mamle ko court ke bahar hi settle kar sakte hain. Isse aapko aage ki kanooni kaarwai se bachne mein madad milti hai.
+
+Compounding charges har category ke liye alag ho sakte hain aur yeh assessed amount ke upar hote hain. Agar aap compounding opt karte hain, toh aapko assessed amount ke saath compounding charges bhi dene honge.
+2025-06-24 13:57:35,843 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 13:57:35,901 - INFO - HTTP Request: POST https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points/query "HTTP/1.1 200 OK"
+2025-06-24 13:57:35,902 - INFO - Retrieved document 1:
+2025-06-24 13:57:35,902 - INFO - Content: iv 
+ 
+5.17 Procedure for adjustment of surcharge in case of part payment 125 
+5.18 Delegation of Power for settlement of billing disputes 126 
+5.19 
+Exemption of charges in case of flat rate Agricultu...
+2025-06-24 13:57:35,903 - INFO - Retrieved document 2:
+2025-06-24 13:57:35,903 - INFO - Content: channel.  (SI 03/2011).   
+ 
+2. The Cashier, on receipt of the application and the amount of charges should 
+issue to the applicant a receipt in Form B.A. -16 in token of having received the 
+consumpt...
+2025-06-24 13:57:35,903 - INFO - Retrieved document 3:
+2025-06-24 13:57:35,903 - INFO - Content: concerned would also be required to pay the development charges to the 
+Nigam because these charges are different to the charges being levied by M.C. 
+In fact payment of development in M.C./levy of de...
+2025-06-24 13:57:35,903 - INFO - Combined context length: 2894 characters
+2025-06-24 13:57:45,507 - INFO - Generated response: Maaf kijiye, the knowledge base mein bijli chori (theft) se related aur koi jaankari uplabdh nahi hai jo pehle na batayi gayi ho....
+2025-06-24 13:57:45,516 - INFO - Added message to conversation_history/conversation_20250624_135459.yaml
+2025-06-24 14:01:36,265 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-06-24 14:01:36,289 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-24 14:01:36,291 - INFO - Using existing collection 'sales_counsellor'
+2025-06-24 14:01:36,300 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-24 14:01:36,549 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 14:01:36,552 - INFO - Chat chain initialized successfully
+2025-06-24 14:01:36,555 - INFO - Started new conversation session: conversation_history/conversation_20250624_140136.yaml
+2025-06-24 14:01:46,614 - INFO - Added message to conversation_history/conversation_20250624_140136.yaml
+2025-06-24 14:01:47,481 - INFO - Structured query: Theft Calculations
+2025-06-24 14:01:47,481 - INFO - Original query: Theft Calculations
+2025-06-24 14:01:47,481 - INFO - Enhanced query: Theft Calculations data analytics course
+2025-06-24 14:01:47,481 - INFO - Searching with enhanced structured query: Theft Calculations data analytics course
+2025-06-24 14:01:47,641 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-24 14:01:47,691 - INFO - HTTP Request: POST https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points/query "HTTP/1.1 200 OK"
+2025-06-24 14:01:47,692 - INFO - Retrieved document 1:
+2025-06-24 14:01:47,692 - INFO - Content: (a) Period of Assessment: - The period of assessment shall be taken as a period of 
+12 months immediately preceding the date of inspection or from the date of 
+release of connection or date of last ch...
+2025-06-24 14:01:47,692 - INFO - Retrieved document 2:
+2025-06-24 14:01:47,693 - INFO - Content: assessment in respect of each such act shall be separately made for every such 
+theft of electricity.  
+(d) Method for assessment of quantity in units for theft of electricity: - Quantity 
+of units co...
+2025-06-24 14:01:47,693 - INFO - Retrieved document 3:
+2025-06-24 14:01:47,693 - INFO - Content: 3. If theft is detected, a minimum amount of Rs. 500/ - per case shall be given 
+immediately to the informer on providing correct secret code word and 
+unique complaint number and exact details of the...
+2025-06-24 14:01:47,693 - INFO - Combined context length: 2428 characters
+2025-06-24 14:01:50,950 - INFO - Generated response: Based on the knowledge base:
+
+Theft calculations involve:
+
+1.  **Period of Assessment:** 12 months immediately preceding the date of inspection, or from the date of release of connection, or date of l...
+2025-06-24 14:01:50,955 - INFO - Added message to conversation_history/conversation_20250624_140136.yaml
+2025-06-24 14:02:02,125 - INFO - Added message to conversation_history/conversation_20250624_140136.yaml
+2025-06-24 14:02:02,128 - INFO - Handling basic conversation query
+2025-06-24 14:02:05,017 - INFO - Generated response: ज्ञानकोष के आधार पर:
+
+चोरी की गणनाएँ इसमें शामिल हैं:
+
+1.  **मूल्यांकन की अवधि:** निरीक्षण की तारीख से ठीक पहले के 12 महीने, या कनेक्शन जारी होने की तारीख से, या एम एंड पी विंग द्वारा अंतिम जाँच की ता...
+2025-06-24 14:02:05,026 - INFO - Added message to conversation_history/conversation_20250624_140136.yaml
+2025-06-24 14:02:10,284 - INFO - Added message to conversation_history/conversation_20250624_140136.yaml
+2025-06-24 14:02:10,286 - INFO - Handling basic conversation query
+2025-06-24 14:02:16,756 - INFO - Generated response: Knowledge base ke according:
+
+Theft calculations mein shamil hain:
+
+1.  **Period of Assessment (Moolyankan ki Avadhi):** Inspection ki date se theek pehle ke 12 months, ya connection release hone ki d...
+2025-06-24 14:02:16,777 - INFO - Added message to conversation_history/conversation_20250624_140136.yaml
+2025-06-24 14:02:23,702 - INFO - Archived conversation session: conversation_history/conversation_20250624_140136.yaml
+2025-06-24 14:02:23,703 - INFO - Started new conversation session: conversation_history/conversation_20250624_140223.yaml

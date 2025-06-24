@@ -23,7 +23,7 @@ def load_base_prompt() -> str:
     with open(prompt_path, "r") as f:
         return f.read()
 
-class SalesCounsellorBot:
+class PDFExtractor:
     def __init__(self):
         self.config = load_config()
         self.initialize_chain()
@@ -41,36 +41,25 @@ class SalesCounsellorBot:
             "prerequisites": ["eligibility", "requirements", "background", "skills needed", "qualification", "who can join"]
         }
         
-        # Define query understanding prompt
-        self.query_understanding_prompt = """Analyze the following question and extract key information. Focus on understanding the intent even if the question is in informal language or different format.
+        # Define query understanding prompt for PDF Extractor with Hinglish/English detection
+        self.query_understanding_prompt = """
+You are a PDF Extractor assistant. Your job is to understand exactly what the user is asking for from the PDF content, not to act as a sales counsellor.
 
-        1. Specific question or aspects or query which is being asked about
-        2. Any implicit requirements or constraints
-        3. Context from previous conversation only if relevant
-        4. Query asked by the learner (including informal language)
-        
-        Question: {question}
-        Chat History: {chat_history}
-        
-        Provide a structured search query that will help find the most relevant information in the knowledge base.
-        Important:
-        - Understand informal language and variations (e.g., "bta do", "tell me", "what about")
-        - Focus on the question being asked about
-        - Include common variations of the topic
-        - Consider the context from conversation history
-        - Format the search query to be clear according to the knowledge base and the topics.
-        
-        Examples:
-        Input: "course topic bta do yar"
-        Output: "course topics curriculum modules syllabus what will i learn topics covered"
-        
-        Input: "Help with the DA Course"
-        Output: "data analytics course overview curriculum modules syllabus what will i learn topics covered"
-        
-        Input: "Tell me about the course"
-        Output: "data analytics course overview curriculum modules syllabus what will i learn topics covered"
-        
-        Format the search query to be clear and comprehensive."""
+Instructions:
+- If the user's question is in Hinglish (Hindi written in English letters), respond in Hinglish.
+- If the user's question is in English, respond in English.
+- Always extract the main information or topic(Converted in English) the user is asking about, using the chat history and the English word for context.
+- Do not add any sales or scheduling messages.
+- Focus only on extracting and understanding the user's request from the PDF content (Convert it to English to understand).
+
+Chat History: {chat_history}
+User Question: {question}
+
+Output:
+- Clearly state what the user is asking for, in the same language (Hinglish or English) as the user's question.
+- If the question is vague, use chat history to clarify.
+- Do not add extra information or sales messages.
+"""
 
     def initialize_chain(self):
         try:
@@ -178,14 +167,25 @@ class SalesCounsellorBot:
         logging.info(f"Enhanced query: {enhanced_query}")
         return enhanced_query
 
+    def detect_hinglish(self, text: str) -> bool:
+        """Detect if the input is Hinglish (simple heuristic)."""
+        # If text contains common Hindi words written in English, treat as Hinglish
+        hindi_words = ["kya", "kaise", "hai", "bata", "bta", "kar", "hai", "kyunki", "kyon", "kyu", "mein", "mera", "tum", "apna", "hai", "nahi", "hai", "ho", "hota", "hoti", "hai", "hai", "hai"]
+        text_lower = text.lower()
+        return any(word in text_lower for word in hindi_words)
+
     def understand_query(self, question: str, chat_history: List[tuple]) -> str:
-        """Use LLM to understand and structure the query."""
+        """Use LLM to understand and structure the query, responding in Hinglish or English as detected."""
         try:
+            # Detect language
+            is_hinglish = self.detect_hinglish(question)
+            prompt_lang = "Hinglish" if is_hinglish else "English"
+
             # Initialize a separate LLM for query understanding
             query_llm = ChatGoogleGenerativeAI(
                 model="gemini-2.5-flash-preview-05-20",
                 google_api_key=self.config["GOOGLE_API_KEY"],
-                temperature=0.1,  # Lower temperature for more focused results
+                temperature=0.1,
                 convert_system_message_to_human=True,
                 generation_config={
                     "max_output_tokens": 1024,
@@ -193,24 +193,25 @@ class SalesCounsellorBot:
                     "top_k": 40
                 }
             )
-            
-            # Create prompt for query understanding
+
+            # Format prompt with language instruction
+            prompt_text = self.query_understanding_prompt + f"\nRespond in {prompt_lang}."
+
             prompt = ChatPromptTemplate.from_messages([
-                ("system", self.query_understanding_prompt),
+                ("system", prompt_text),
                 ("human", "{question}")
             ])
-            
-            # Get structured query
+
             chain = prompt | query_llm
             result = chain.invoke({
                 "question": question,
                 "chat_history": chat_history
             })
-            
+
             structured_query = result.content if hasattr(result, 'content') else str(result)
             logging.info(f"Structured query: {structured_query}")
             return structured_query
-            
+
         except Exception as e:
             logging.error(f"Error in query understanding: {str(e)}")
             return question  # Fallback to original question
