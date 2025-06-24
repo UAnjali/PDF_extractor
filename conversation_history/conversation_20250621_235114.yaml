@@ -1,0 +1,15 @@
+conversation:
+- content: Hello!
+  role: user
+  timestamp: '2025-06-21T23:51:31.449183'
+- content: Yes, based on the empty chat history, "Hello!" is the first message in
+    this conversation.
+  role: assistant
+  timestamp: '2025-06-21T23:51:34.531975'
+- content: Can you help me with electricity act 2003
+  role: user
+  timestamp: '2025-06-21T23:52:09.366876'
+- content: The Electricity Act 2003 is not present in the provided knowledge base.
+  role: assistant
+  timestamp: '2025-06-21T23:52:18.907440'
+session_start: '2025-06-21T23:51:14.796509'

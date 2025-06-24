@@ -1,0 +1,29 @@
+conversation:
+- content: How much salary can I expect after this job bootcamp.
+  role: user
+  timestamp: '2025-06-20T16:52:48.315078'
+- content: 'That''s a fantastic question! To give you the most accurate idea of the
+    salary you can expect, it would be helpful to know a little more about your background.
+
+
+    *   Are you a **fresher** or a **working professional**?
+
+    *   If you''re currently working, could you share your **current CTC**?
+
+
+    Knowing this will help me provide relevant insights from our successful alumni!'
+  role: assistant
+  timestamp: '2025-06-20T16:52:50.679667'
+- content: Tell me both for fresher and working professional
+  role: user
+  timestamp: '2025-06-20T16:53:09.314358'
+- content: "That's a great follow-up question! Our Data Analytics Job Bootcamp prepares\
+    \ you for high-growth roles like:\n\n*   ***Data Analyst***\n*   ***Business Analyst***\n\
+    *   ***MIS Analyst***\n\nThe *average starting salaries* for these roles generally\
+    \ range from **6\u201310 LPA**, and this figure tends to rise significantly with\
+    \ experience.\n\nTo give you a truly personalized career trajectory and discuss\
+    \ how your specific background can influence this, I'd highly recommend a quick\
+    \ chat with our expert counsellors. Would you like to schedule a one-on-one call?"
+  role: assistant
+  timestamp: '2025-06-20T16:53:22.337758'
+session_start: '2025-06-20T16:47:36.463129'

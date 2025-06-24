@@ -1,0 +1,19 @@
+2025-06-21 23:35:32,803 - INFO - No existing collection to delete: [Errno 8] nodename nor servname provided, or not known
+2025-06-21 23:53:19,129 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-06-21 23:53:19,794 - INFO - HTTP Request: DELETE https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-21 23:53:19,798 - INFO - Deleted existing collection to ensure consistency
+2025-06-21 23:53:20,190 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-21 23:53:20,191 - INFO - Created new collection 'sales_counsellor' with correct dimensions
+2025-06-21 23:53:20,192 - INFO - Loading PDF file: data/Compendium_upto_March_2022.pdf
+2025-06-21 23:53:22,293 - INFO - Loaded 738 documents from data/Compendium_upto_March_2022.pdf
+2025-06-21 23:53:22,294 - INFO - Loaded 738 documents from data/Compendium_upto_March_2022.pdf
+2025-06-21 23:53:22,294 - INFO - Loading PDF file: data/Sales_Manual_2013.pdf
+2025-06-21 23:53:26,329 - INFO - Loaded 294 documents from data/Sales_Manual_2013.pdf
+2025-06-21 23:53:26,330 - INFO - Loaded 294 documents from data/Sales_Manual_2013.pdf
+2025-06-21 23:53:26,352 - INFO - Split 1032 documents into 1809 chunks
+2025-06-21 23:53:27,367 - INFO - HTTP Request: GET https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor "HTTP/1.1 200 OK"
+2025-06-21 23:53:28,342 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-21 23:53:29,855 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-21 23:53:34,250 - INFO - HTTP Request: PUT https://d63d24c0-4d40-4f01-a008-09a8cad5d568.us-east-1-0.aws.cloud.qdrant.io:6333/collections/sales_counsellor/points?wait=true "HTTP/1.1 200 OK"
+2025-06-21 23:53:35,673 - INFO - HTTP Request: POST https://api.openai.com/v1/embeddings "HTTP/1.1 200 OK"
+2025-06-21 23:53:42,264 - ERROR - Error re-embedding all documents: The write operation timed out
